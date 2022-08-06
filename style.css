@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --main-color: #26db26;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    background: url("images/bg.webp") center center no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    content: "";
+    height: 100vh;
+    /* opacity: 0.5; */
+    width: 100%;
+    background-size: cover;
+}
+
+header {
+    background: #000;
+    width: 100%;
+    height: 81px;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    font-size: 23px;
+    padding: 43px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin-right: -23px;
+}
+
+li a:hover {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+#searchbox {
+    width: 391px;
+    height: 35px;
+    padding: 2px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 14px;
+    padding: 12px;
+    background: #4d4d4d;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+#btn {
+    padding: 6px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 27px;
+    cursor: pointer;
+    width: 84px;
+    height: 34px;
+    font-size: 16px;
+    background: #4d4d4d;
+    color: white;
+}
+
+#btn:hover {
+    background: var(--main-color);
+    border-color: var(--main-color);
+
+}
+
+#logo {
+    width: 45px;
+    margin-bottom: -17px;
+}
+
+
+#spotify {
+    margin-left: -73px;
+    font-family: 'Caveat', cursive;
+    font-size: 38px;
+}
+
+main {
+    height: calc(100vh - 81px - 10vh);
+}
+
+
+#playbtn {
+    height: 44px;
+    filter: invert(1);
+}
+
+.play-pause {
+    background: #000;
+    border: 1px solid black;
+}
+
+.play-pause button {
+    width: 12px;
+    height: 12px;
+}
+
+
+#next {
+    height: 41px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.box {
+    margin: 12px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 93%;
+    height: 65vh;
+    color: white;
+}
+
+.row {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+    text-align: left;
+    width: 85%;
+    background: rgb(0, 0, 0);
+    height: 82px;
+    margin: 11px auto;
+    margin-right: 398px;
+    padding: 9px;
+}
+
+.row:hover {
+    border: 2px solid var(--main-color);
+    background: rgba(0, 0, 0, 0.329);
+}
+
+.row img {
+    height: 71px;
+    margin-right: 28px;
+}
+
+#spotifylogo {
+    height: 65vh;
+    width: 490px;
+}
+
+.row ul li {
+    display: inline;
+}
+
+.controls {
+    filter: invert(1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 12px auto;
+    margin-right: 12px;
+}
+
+.skip-next2 img {
+    height: 40px;
+}
+
+.skip-next2 {
+    background: black;
+    border: 1px solid black;
+    width: 48px;
+    border-radius: 32px;
+    height: 51px;
+    padding: 4px;
+}
+
+#nxt {
+    height: 37px;
+}
+
+.playbutton {
+    border: 2px solid rgb(0, 0, 0);
+    background: #000;
+    border-radius: 38px;
+    width: 47px;
+    padding: 1px;
+    margin: 15px;
+}
+
+.playbutton img {
+    height: 41px;
+    filter: invert(1);
+}
+
+#effect {
+    display: none;
+    width: 490px;
+}
+
+
+footer {
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    color: var(--main-color);
+    background: #000;
+}
+
+
+/** Adding Animations */
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.control-panel{
+    margin-bottom: -32px;
+    /* display: flex; */
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    color: white;
+    min-height: 17vh;
+    max-height: 18vh;
+    border: 2px solid var(--main-color);
+    background: rgb(0, 0, 0);
+    animation: myAnim forwards 1s 1 alternate;
+    display: none;
+}
+
+#cover {
+    width: 100px;
+    padding: 8px;
+}
+
+#songName {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+
+.control-panel img{
+    width: 34px;
+    filter: invert(1);
+}
+.control-panel button{
+    background: #000;
+    border: 2px solid black;
+    border-radius: 34px;
+    padding: 12px;
+    margin: 12px 19px;
+}
+
+#PAUSE{
+    display: none;
+}
+
+/** Progress Bar */
+#volume{
+    display: none;
+}

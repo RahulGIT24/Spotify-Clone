@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Welcome to Spotify</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+            <li><img src="images/logo.png" alt="" id="logo"></li>
+            <li id="spotify">Spotify</li>
+          <li><a href="http://home">Home</a></li>
+          <li><a href="http://home">Podcasts</a></li>
+          <li><a href="http://home">Playlists</a></li>
+          <li>
+            <form action="php">
+              <input type="text" placeholder="Search Your Songs Here" id="searchbox" />
+            </form>
+          </li>
+          <button id="btn">Search</button>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box">
+          <div class="leftbox">
+            <div class="row">
+              <img src="images/cover.jpg" alt="">
+              <p>Khamoshiyan</p>
+              <div class="buttons">
+                <ul>
+                  <li><button class="skip-next2 skipback" onclick="skipB1(); Playbars()"><img src="images/skip-back.png" alt="" srcset="" class="controls"></button></li>
+                  <li><button class="playbutton playsong" onclick="song1(); Playbars()"><img src="images/play-button.png" alt="" srcset=""></button></li>
+                  <li><button class="playbutton pausesong" onclick="songPause1(); Stopbars()"><img src="images/pause-button.png" alt="" srcset=""></button></li>
+                  <li><button class="skip-next2 skipnext" onclick="skipN1(); Playbars()"><img src="images/next.png" alt="" srcset="" class="controls" id="nxt"></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <img src="images/cover.jpg" alt="">
+              <p>Mai Dhoondne</p>
+              <div class="buttons">
+                <ul>
+                  <li><button class="skip-next2 skipback" onclick="skipB2(); Playbars()"><img src="images/skip-back.png" alt="" srcset="" class="controls"></button></li>
+                  <li><button class="playbutton playsong" onclick="song2(); Playbars()"><img src="images/play-button.png" alt="" srcset=""></button></li>
+                  <li><button class="playbutton pausesong" onclick="songPause2(); Stopbars()"><img src="images/pause-button.png" alt="" srcset=""></button></li>
+                  <li><button class="skip-next2 skipnext" onclick="skipN2(); Playbars()"><img src="images/next.png" alt="" srcset="" class="controls" id="nxt"></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <img src="images/cover.jpg" alt="">
+              <p>Sanam Re </p>
+              <div class="buttons">
+                <ul>
+                  <li><button class="skip-next2 skipback" onclick="skipB3(); Playbars()"><img src="images/skip-back.png" alt="" srcset="" class="controls"></button></li>
+                  <li><button class="playbutton playsong" onclick="song3(); Playbars()"><img src="images/play-button.png" alt="" srcset=""></button></li>
+                  <li><button class="playbutton pausesong" onclick="songPause3(); Stopbars()"><img src="images/pause-button.png" alt="" srcset=""></button></li>
+                  <li><button class="skip-next2 skipnext" onclick="skipN3(); Playbars()"><img src="images/next.png" alt="" srcset="" class="controls" id="nxt"></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <img src="images/cover.jpg" alt="">
+              <p>Tera Fitoor</p>
+              <div class="buttons">
+                <ul>
+                  <li><button class="skip-next2 skipback" onclick="skipB4(); Playbars()"><img src="images/skip-back.png" alt="" srcset="" class="controls"></button></li>
+                  <li><button class="playbutton playsong" onclick="song4(); Playbars()"><img src="images/play-button.png" alt="" srcset=""></button></li>
+                  <li><button class="playbutton pausesong" onclick="songPause4(); Stopbars()"><img src="images/pause-button.png" alt="" srcset=""></button></li>
+                  <li><button class="skip-next2 skipnext" onclick="skipN4(); Playbars()"><img src="images/next.png" alt="" srcset="" class="controls" id="nxt"></button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <img src="images/cover.jpg" alt="">
+              <p>Zaalima</p>
+              <div class="buttons">
+                <ul>
+                  <li><button class="skip-next2 skipback" onclick="skipB5(); Playbars()"><img src="images/skip-back.png" alt="" srcset="" class="controls"></button></li>
+                  <li><button class="playbutton playsong" onclick="song5(); Playbars()" ><img src="images/play-button.png" alt="" srcset=""></button></li>
+                  <li><button class="playbutton pausesong" onclick="songPause5(); Stopbars()"><img src="images/pause-button.png" alt="" srcset=""></button></li>
+                  <li><button class="skip-next2 skipnext" onclick="skipN5(); Playbars()"><img src="images/next.png" alt="" srcset="" class="controls" id="nxt"></button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rightbox">
+            <img src="images/logo.png" alt="" srcset="" id="spotifylogo">
+            <img src="images/effect.gif" alt="" id="effect">
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="control-panel" id="ctPanel">
+        <div class="ctrl">
+            <button class="controls" id="stop" onclick="stopSongs()"><img src="images/stop.png" alt=""></button>
+            <button class="controls" id="PLAY"><img src="images/play-button.png" alt="" onclick="Playbars(); newPlay()"></button>
+            <button class="controls" id="PAUSE"><img src="images/pause-button.png" alt="" onclick="Stopbars(); newPause()"></button>
+            <button class="controls" id="volume" onclick="volCtrl2()"><img src="images/vol.png" alt=""></button>
+            <button class="controls" id="mute" onclick="volCtrl()"><img src="images/mute.png" alt=""></button>
+          </div>
+          <p id="songName">Let's Start the Jam!!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><p>All Copyrights Reserved</p></footer>
+  </body>
+  <script src="index.js"></script>
+</html>
