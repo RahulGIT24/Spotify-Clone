@@ -222,7 +222,7 @@ p {
 
 
 footer {
-    margin-top: 23px;
+    margin-top: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,15 +237,13 @@ footer {
 
 @keyframes myAnim {
     0% {
-        opacity: 0;
+        width: 0;
     }
-
-    35% {
-        opacity: 0.5;
+    50% {
+        width: 50%;
     }
-
     100% {
-        opacity: 1;
+        width: 100%;
     }
 }
 
@@ -274,6 +272,7 @@ footer {
 #songName {
     text-align: center;
     font-family: 'Courgette', cursive;
+    color: var(--main-color);
 }
 
 .control-panel img{
@@ -295,4 +294,12 @@ footer {
 /** Progress Bar */
 #volume{
     display: none;
+}
+
+/** Hover Effects */
+.hover:hover{
+    background: var(--main-color);
+}
+.hover img:hover{
+    filter: none;
 }

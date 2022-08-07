@@ -131,6 +131,7 @@ function skipN1() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud2.play();
+  aud2.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Mai Dhoondne";
   arr.aud1.pause();
@@ -144,6 +145,7 @@ function skipN2() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud3.play();
+  aud3.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Sanam Re";
   arr.aud1.pause();
@@ -157,6 +159,7 @@ function skipN3() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud4.play();
+  aud4.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Tera Fitoor";
   arr.aud1.pause();
@@ -170,6 +173,7 @@ function skipN4() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud5.play();
+  aud5.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Zaalima";
   arr.aud1.pause();
@@ -183,6 +187,7 @@ function skipN5() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud1.play();
+  aud1.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Khamoshiyaan";
   arr.aud5.pause();
@@ -198,6 +203,7 @@ function skipB1() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud5.play();
+  aud5.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Zaalima";
   arr.aud1.pause();
@@ -211,6 +217,7 @@ function skipB2() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud1.play();
+  aud1.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Khamoshiyaan";
   arr.aud5.pause();
@@ -224,6 +231,7 @@ function skipB3() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud2.play();
+  aud2.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Mai Dhoondne";
   arr.aud1.pause();
@@ -237,6 +245,7 @@ function skipB4() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud3.play();
+  aud3.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Sanam Re";
   arr.aud1.pause();
@@ -250,6 +259,7 @@ function skipB5() {
   play.style.display = "none";
   pause.style.display = "inline-block";
   aud4.play();
+  aud4.currentTime = 0;
   let name = document.getElementById("songName");
   name.innerText = "Now playing - Tera Fitoor";
   arr.aud1.pause();
